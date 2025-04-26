@@ -1,0 +1,98 @@
+{
+  "categories": [
+    {
+      "title": "Categories For Women",
+      "data": [
+        {
+          "title": "Hoodies & Sweatshirt",
+          "description": "Explore Now",
+          "image": "https://images.pexels.com/photos/6311614/pexels-photo-6311614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
+        },
+        {
+          "title": "Jeans",
+          "description": "Perfect Fit for Every Style",
+          "image": "https://images.pexels.com/photos/6311613/pexels-photo-6311613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
+        },
+        {
+          "title": "Activewear",
+          "description": "Move Freely and Comfortably",
+          "image": "https://images.pexels.com/photos/6311617/pexels-photo-6311617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
+        },
+        {
+          "title": "Coats & Jackets",
+          "description": "Stay Warm in Style",
+          "image": "https://images.pexels.com/photos/6311620/pexels-photo-6311620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
+        },
+        {
+          "title": "Handbags",
+          "description": "Complete Your Look",
+          "image": "https://images.pexels.com/photos/6311619/pexels-photo-6311619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "items": [
+      {
+        "title": "Need Help",
+        "list": [
+          {
+            "label": "Contact Us",
+            "path": "/contact-us"
+          },
+          {
+            "label": "Track Order",
+            "path": "/track-order"
+          },
+          {
+            "label": "Returns & Refunds",
+            "path": "/refunds"
+          },
+          {
+            "label": "FAQ's",
+            "path": "/faq"
+          },
+          {
+            "label": "Career",
+            "path": "/career"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "list": [
+          {
+            "label": "About Us",
+            "path": "/about"
+          },
+          {
+            "label": "Media",
+            "path": "/media"
+          }
+        ]
+      },
+      {
+        "title": "More Info",
+        "list": [
+          {
+            "label": "Term and Conditions",
+            "path": "/terms-conditions"
+          },
+          {
+            "label": "Privacy Policy",
+            "path": "/policies"
+          },
+          {
+            "label": "Shipping Policy",
+            "path": "/policies"
+          }
+        ]
+      },
+      {
+        "title": "Location",
+        "description": "Location Country"
+      }
+    ],
+    "copyright": "Copyright © 2024 ShopEase"
+  }
+}
