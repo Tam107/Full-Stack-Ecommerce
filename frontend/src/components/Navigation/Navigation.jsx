@@ -2,6 +2,7 @@ import React from 'react'
 import {Wishlist} from "../common/WishList";
 import {AccountIcon} from "../common/AccountIcon";
 import {CartIcon} from "../common/CartIcon";
+import {Link, NavLink} from "react-router-dom";
 
 const Navigation = () => {
     return (
@@ -12,18 +13,16 @@ const Navigation = () => {
             </div>
             <div className={"flex flex-wrap items-center gap-8 flex-1"}>
                 {/*    Navigation items*/}
-                <ul className={"flex items-center gap-8"}>
-                    <a href="#">
-                        <li className={"text-gray-800 text-lg hover:text-gray-500 cursor-pointer"}>Home</li>
-                    </a>
-                    <li className={"text-gray-800 text-lg hover:text-gray-500 cursor-pointer"}><a href="">Products</a>
+                <ul className='flex gap-14 text-gray-600 hover:text-black'>
+                    <li><NavLink to='/' className={({isActive}) => isActive ? 'active-link' : ''}>Shop</NavLink></li>
+                    <li><NavLink to='/men' className={({isActive}) => isActive ? 'active-link' : ''}>Men</NavLink></li>
+                    <li><NavLink to='/women' className={({isActive}) => isActive ? 'active-link' : ''}>Women</NavLink>
                     </li>
-                    <li className={"text-gray-800 text-lg hover:text-gray-500 cursor-pointer"}><a href="">About</a></li>
-                    <li className={"text-gray-800 text-lg hover:text-gray-500 cursor-pointer"}><a href="">Contact</a>
+                    <li><NavLink to='/kids' className={({isActive}) => isActive ? 'active-link' : ''}>Kids</NavLink>
                     </li>
                 </ul>
-            </div>
 
+            </div>
             {/*    Search bar*/}
             <div className={"flex justify-center"}>
                 <div className={"border rounded flex overflow-hidden"}></div>
@@ -44,7 +43,9 @@ const Navigation = () => {
                         <button><Wishlist/></button>
                     </li>
                     <li>
-                        <button><CartIcon/></button>
+                        <button>
+                            <Link to={"/cart-items"}><CartIcon/></Link>
+                        </button>
                     </li>
                     <li>
                         <button><AccountIcon/></button>

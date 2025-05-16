@@ -6,23 +6,23 @@ import InstaIcon from "../common/InstaIcon";
 
 const Footer = ({content}) => {
     return (
-        <footer className="bg-black text-white py-12">
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <footer className="bg-black py-12 text-white">
+            <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 md:grid-cols-4">
                 {content?.items && content?.items.map((item, index) => (
                     <div key={index}>
-                        <p className="font-semibold text-lg mb-4">{item?.title}</p>
+                        <p className="mb-4 text-lg font-semibold">{item?.title}</p>
                         <div className="flex flex-col gap-2">
                             {item?.list && item?.list.map((listItem, idx) => (
                                 <a
                                     key={idx}
                                     href={listItem?.path}
-                                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                                    className="text-sm text-gray-400 transition-colors hover:text-white"
                                 >
                                     {listItem?.label}
                                 </a>
                             ))}
                             {item?.description && (
-                                <p className="text-sm text-gray-400 mt-4">
+                                <p className="mt-4 text-sm text-gray-400">
                                     {item?.description}
                                 </p>
                             )}
@@ -32,11 +32,11 @@ const Footer = ({content}) => {
             </div>
 
             {/* Social Icons */}
-            <div className="flex justify-center items-center gap-6 mt-8">
-                <a href="/" aria-label="Facebook" className="hover:scale-110 transition-transform">
+            <div className="mt-8 flex items-center justify-center gap-6">
+                <a href="/" aria-label="Facebook" className="transition-transform hover:scale-110">
                     <FbIcon/>
                 </a>
-                <a href="/" aria-label="Instagram" className="hover:scale-110 transition-transform">
+                <a href="/" aria-label="Instagram" className="transition-transform hover:scale-110">
                     <InstaIcon/>
                 </a>
             </div>
