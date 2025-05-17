@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CartIcon = ({bgColor}) => {
     return (
-        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" className='hover:fill-red-300'
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" className='hover:fill-black'
              style={{backgroundColor: `${bgColor ? bgColor : ''}`}} xmlns="http://www.w3.org/2000/svg">
             {!bgColor && <rect width="44" height="44" rx="8" fill="white"/>}
             <path
@@ -12,3 +12,4 @@ export const CartIcon = ({bgColor}) => {
 
     )
 }
+
