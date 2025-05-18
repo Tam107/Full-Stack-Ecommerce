@@ -12,7 +12,7 @@ const SizeFilter = ({sizes, hidleTitle}) => {
         }
     }, [appliedSize, setAppliedSize]);
     return (
-        <div className={`flex flex-col mb-4 ${hidleTitle ? '' : 'mb-4'}`}>
+        <div className={`flex flex-col mt-2 ${hidleTitle ? '' : 'mb-4'}`}>
             {!hidleTitle && <p className={"text-[16px] text-black mt-5 mb-5"}>
                 Size
             </p>}
